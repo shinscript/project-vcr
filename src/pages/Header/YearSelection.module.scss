@@ -1,7 +1,19 @@
-.Years {
+.yearsCtn {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  color: #ffffff;
-  text-align: center;
+  justify-content: flex-end;
+  gap: 4.5rem;
+  padding: 1rem 2.5rem;
+  border-bottom: white 2px solid;
+
+  .years {
+    font-family: "Punch Expanded Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: 0.005em;
+    color: #ffffff;
+    text-align: center;
+  }
 }

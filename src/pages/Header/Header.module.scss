@@ -4,10 +4,10 @@
   display: flex;
   flex-direction: column;
   width: 100vh;
-  height: 223px;
+  height: 323px;
   margin-top: auto;
   transform: rotate(-90deg);
-  transform-origin: 110px 110px;
+  transform-origin: 160px 160px;
 
   .header2 {
     font-family: "Punch Expanded Italic";
@@ -18,6 +18,9 @@
     color: #ffffff;
     border-bottom: #ffffff 2px solid;
     text-align: center;
+    white-space: nowrap;
+    padding: 20px 0;
+    margin: 0;
   }
 
   .header1 {
@@ -29,9 +32,6 @@
     color: #f0f42e;
     text-align: center;
     border-bottom: #ffffff 2px solid;
-  }
-
-  * {
     white-space: nowrap;
     padding: 20px 0;
     margin: 0;

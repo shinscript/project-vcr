@@ -1,5 +1,10 @@
-const Main = () => {
-  return <></>;
-};
+// interface Main {
+//   selectedYear: string;
+// }
 
-export default Main;
+// const Main: React.FC<Main> = ({ selectedYear }) => {
+//   console.log(selectedYear);
+//   return <>{selectedYear}</>;
+// };
+
+// export default Main;
