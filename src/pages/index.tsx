@@ -1,12 +1,12 @@
 import Header from "./Header/Header";
-// import Main from "./Main/Main";
+import Main from "./Main/Main";
 import { useEffect, useState } from "react";
 import { getData } from "../api/getVCRData";
 import { VCRData } from "@/types/vcr";
 
 export default function Home() {
   const [data, setData] = useState<VCRData[]>([]);
-  const [selectedYear, setSelectedYear] = useState<string>("");
+  const [decade, setDecade] = useState<string>("");
 
   const assignVcrData = async (): Promise<void> => {
     try {
@@ -24,8 +24,8 @@ export default function Home() {
 
   return (
     <>
-      <Header data={data} setSelectedYear={setSelectedYear} />
-      {/* <Main selectedYear={selectedYear} /> */}
+      <Header setDecade={setDecade} />
+      <Main data={data} decade={decade} />
     </>
   );
 }

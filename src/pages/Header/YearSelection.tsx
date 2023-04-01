@@ -1,20 +1,21 @@
-import { VCRData } from "@/types/vcr";
+import type { VCRData, Decades } from "@/types/vcr";
 import styles from "./YearSelection.module.scss";
 interface YearSelection {
-  data: VCRData[];
-  setSelectedYear: (input: string) => void;
+  setDecade: (input: string) => void;
 }
 
-const YearSelection: React.FC<YearSelection> = ({ data, setSelectedYear }) => {
+const decades: Decades = ["1960s", "1970s", "1980s", "1990s", "2000s", "2010s"];
+
+const YearSelection: React.FC<YearSelection> = ({ setDecade }) => {
   return (
     <div className={styles.yearsCtn}>
-      {data.map((vcrData: VCRData, index: number) => (
+      {decades.map((decade: string, index: number) => (
         <div
-          key={`${vcrData.year}-${index}`}
+          key={`${decade}-${index}`}
           className={styles.years}
-          onClick={() => setSelectedYear(vcrData.year)}
+          onClick={() => setDecade(decade)}
         >
-          {`${vcrData.year}s`}
+          {decade}
         </div>
       ))}
     </div>

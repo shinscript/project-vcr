@@ -3,18 +3,17 @@ import styles from "./Header.module.scss";
 import { VCRData } from "@/types/vcr";
 
 interface Header {
-  data: VCRData[];
-  setSelectedYear: (input: string) => void;
+  setDecade: (input: string) => void;
 }
 
-const Header: React.FC<Header> = ({ data, setSelectedYear }) => {
+const Header: React.FC<Header> = ({ setDecade }) => {
   return (
     <section className={styles.section}>
       <h2 className={styles.header2}>
         ✦ ✧ Video archive ✦ ✧ Video archive ✦ ✧
       </h2>
       <h1 className={styles.header1}>LAST DAY OF SCHOOL</h1>
-      <YearSelection data={data} setSelectedYear={setSelectedYear}/>
+      <YearSelection setDecade={setDecade} />
     </section>
   );
 };
