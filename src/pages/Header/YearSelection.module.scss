@@ -1,9 +1,9 @@
 .yearsCtn {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
   gap: 4.5rem;
   padding: 1rem 2.5rem;
+  overflow-x: scroll;
   border-bottom: white 2px solid;
 
   .years {
