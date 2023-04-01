@@ -2,6 +2,7 @@ import { useMemo } from "react";
 import { VCRData } from "@/types/vcr";
 import styles from "./Main.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Main {
   data: VCRData[];
@@ -26,13 +27,14 @@ const Main: React.FC<Main> = ({ data, decade }) => {
     <section className={styles.section}>
       <div className={styles.shelf}>
         {shelf1.map((vcrData: VCRData | null, index: number) => (
-          <Image
-            alt="vcrImage"
-            src={vcrData?.img || ""}
-            key={`vcr0-${index}`}
-            height={102}
-            width={642}
-          />
+          <Link key={`vcr0-${index}`} href={`/vcr/${vcrData?.year}`}>
+            <Image
+              alt="vcrImage"
+              src={vcrData?.img || ""}
+              height={102}
+              width={642}
+            />
+          </Link>
         ))}
       </div>
       <div className={styles.shelf}>
