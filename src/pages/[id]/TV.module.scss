@@ -1,0 +1,32 @@
+.tv {
+  position: absolute;
+  margin: 3rem 26rem;
+}
+
+.tape {
+  position: absolute;
+  left: 14.5rem;
+  top: 45rem;
+  animation: insertTape 3s forwards;
+  transform-origin: top;
+}
+
+.audio {
+  display: none;
+}
+
+@keyframes insertTape {
+  0% {
+    transform: scale(100%);
+  }
+
+  80% {
+    transform: scale(42%);
+    z-index: 1;
+  }
+
+  100% {
+    transform: scale(41%);
+    z-index: -1;
+  }
+}

@@ -1,31 +1,13 @@
-import Header from "./Header/Header";
-import Main from "./Main/Main";
-import { useEffect, useState } from "react";
-import { getData } from "../api/getVCRData";
+import Shelf from "./Shelf/Shelf";
 import { VCRData } from "@/types/vcr";
 
-export default function Home() {
-  const [data, setData] = useState<VCRData[]>([]);
-  const [decade, setDecade] = useState<string>("");
-
-  const assignVcrData = async (): Promise<void> => {
-    try {
-      const vcrData = await getData();
-      setData(vcrData);
-    } catch (error) {
-      throw error;
-    }
-  };
-
-  useEffect(() => {
-    if (data.length > 0) return;
-    assignVcrData();
-  }, [data]);
-
-  return (
-    <>
-      <Header setDecade={setDecade} />
-      <Main data={data} decade={decade} />
-    </>
-  );
+interface Home {
+  decade: string;
+  data: VCRData[];
 }
+
+const Home: React.FC<Home> = ({ decade, data }) => {
+  return <Shelf data={data} decade={decade} />;
+};
+
+export default Home;

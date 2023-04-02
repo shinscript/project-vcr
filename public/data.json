@@ -1,5 +1,6 @@
 [
   {
+    "id": 0,
     "name": "Rolfe High School class of 1960",
     "year": "1960",
     "time-stamp": "4:10",
@@ -9,6 +10,7 @@
     "img": "/tapes/tape-img-20.png"
   },
   {
+    "id": 1,
     "name": "Palisades High School 1975",
     "year": "1975",
     "time-stamp": "4:20",
@@ -18,6 +20,7 @@
     "img": "/tapes/tape-img-11.png"
   },
   {
+    "id": 2,
     "name": "Iowa City City High Class of 1980 Last Day - May 23, 1980",
     "year": "1980",
     "time-stamp": "4:52",
@@ -27,6 +30,7 @@
     "img": "/tapes/tape-img-02.png"
   },
   {
+    "id": 3,
     "name": "Goodpasture 1984 Last Day of School 1 2",
     "year": "1984",
     "time-stamp": "19:48",
@@ -36,6 +40,7 @@
     "img": "/tapes/tape-img-12.png"
   },
   {
+    "id": 4,
     "name": "Last Day of School - Boca High 1987",
     "year": "1987",
     "time-stamp": "8:03",
@@ -45,6 +50,7 @@
     "img": "/tapes/tape-img-21.png"
   },
   {
+    "id": 5,
     "name": "Last Day of School - Pennsbury High School Class of 1992",
     "year": "1992",
     "time-stamp": "16:07",
@@ -54,6 +60,7 @@
     "img": "/tapes/tape-img-13.png"
   },
   {
+    "id": 6,
     "name": "Last Full Day of High School (June, 1994)",
     "year": "1994",
     "time-stamp": "15:08",
@@ -63,6 +70,7 @@
     "img": "/tapes/tape-img-14.png"
   },
   {
+    "id": 7,
     "name": "1995 MacArthur HS Last Day Of School, Levittown NY",
     "year": "1995",
     "time-stamp": "4:16",
@@ -72,6 +80,7 @@
     "img": "/tapes/tape-img-15.png"
   },
   {
+    "id": 8,
     "name": "St. Cloud High School - Last Day for Seniors - 1996",
     "year": "1996",
     "time-stamp": "5:31",
@@ -81,6 +90,7 @@
     "img": "/tapes/tape-img-24.png"
   },
   {
+    "id": 9,
     "name": "A Day at East High School - Senior year- September 1996",
     "year": "1996",
     "time-stamp": "12:21",
@@ -90,6 +100,7 @@
     "img": "/tapes/tape-img-16.png"
   },
   {
+    "id": 10,
     "name": "Class of '98 Last Day at Solon High School - Part 1",
     "year": "1998",
     "time-stamp": "3:20",
@@ -99,6 +110,7 @@
     "img": "/tapes/tape-img-04.png"
   },
   {
+    "id": 11,
     "name": "Final Day at GHS: June 1999",
     "year": "1999",
     "time-stamp": "11:26",
@@ -108,6 +120,7 @@
     "img": "/tapes/tape-img-06.png"
   },
   {
+    "id": 12,
     "name": "Last Day of School 1999 Avella Area Junior Senior High School",
     "year": "1999",
     "time-stamp": "17:33",
@@ -117,6 +130,7 @@
     "img": "/tapes/tape-img-17.png"
   },
   {
+    "id": 13,
     "name": "Deshler High School - Last Day of School - May 18, 2000",
     "year": "2000",
     "time-stamp": "17:26",
@@ -126,6 +140,7 @@
     "img": "/tapes/tape-img-22.png"
   },
   {
+    "id": 14,
     "name": "Final Day at GHS: June 2001 'Final Assembly'",
     "year": "2001",
     "time-stamp": "11:26",
@@ -135,6 +150,7 @@
     "img": "/tapes/tape-img-07.png"
   },
   {
+    "id": 15,
     "name": "Proctor High School 2002 - Last Day of School",
     "year": "2002",
     "time-stamp": "2:26",
@@ -144,6 +160,7 @@
     "img": "/tapes/tape-img-18.png"
   },
   {
+    "id": 16,
     "name": "Last days @ Westside High School - Houston TX - 2003",
     "year": "2003",
     "time-stamp": "5:44",
@@ -153,6 +170,7 @@
     "img": "/tapes/tape-img-01.png"
   },
   {
+    "id": 17,
     "name": "Last day of school 2005 dvhs",
     "year": "2005",
     "time-stamp": "7:30",
@@ -162,6 +180,7 @@
     "img": "/tapes/tape-img-08.png"
   },
   {
+    "id": 18,
     "name": "Last Day of High School 2008",
     "year": "2008",
     "time-stamp": "7:16",
@@ -171,6 +190,7 @@
     "img": "/tapes/tape-img-23.png"
   },
   {
+    "id": 19,
     "name": "The Class Of 2009: Last Day Of School",
     "year": "2009",
     "time-stamp": "9:06",
@@ -180,6 +200,7 @@
     "img": "/tapes/tape-img-05.png"
   },
   {
+    "id": 20,
     "name": "Last Day of High School",
     "year": "2009",
     "time-stamp": "5:56",
@@ -189,6 +210,7 @@
     "img": "/tapes/tape-img-25.png"
   },
   {
+    "id": 21,
     "name": "Last Day of School 2010",
     "year": "2010",
     "time-stamp": "2:44",
@@ -198,6 +220,7 @@
     "img": "/tapes/tape-img-10.png"
   },
   {
+    "id": 22,
     "name": "Last Day Of School At Colton High:(:)......",
     "year": "2011",
     "time-stamp": "7:16",
@@ -207,6 +230,7 @@
     "img": "/tapes/tape-img-03.png"
   },
   {
+    "id": 23,
     "name": "SBHS Last Days of School, 2012",
     "year": "2012",
     "time-stamp": "7:07",
@@ -216,6 +240,7 @@
     "img": "/tapes/tape-img-19.png"
   },
   {
+    "id": 24,
     "name": "A Day In My Life - Last Day Of High School",
     "year": "2013",
     "time-stamp": "10:25",
