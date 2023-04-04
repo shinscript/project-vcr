@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Header from "./header/Header";
 import type { AppProps } from "next/app";
 import "./styles/global.scss";
@@ -25,6 +26,19 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      <img
+        style={{
+          position: "absolute",
+          opacity: ".3",
+          zIndex: "1",
+          pointerEvents: "none",
+          width: "100vw",
+          height: "2728px",
+          overflow: "visible",
+        }}
+        alt="gif"
+        src="/overlay/scanline.gif"
+      />
       <Header setDecade={setDecade} />
       <Component {...pageProps} decade={decade} data={data} />;
     </>

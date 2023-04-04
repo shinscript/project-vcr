@@ -15,6 +15,13 @@
   display: none;
 }
 
+.video {
+  position: absolute;
+  left: 31rem;
+  top: 10rem;
+  border-radius: 10px;
+}
+
 @keyframes insertTape {
   0% {
     transform: scale(100%);

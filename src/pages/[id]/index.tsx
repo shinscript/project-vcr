@@ -1,7 +1,7 @@
 import { VCRData } from "@/types/vcr";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { useEffect, useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import tvImage from "../../../public/monitor-01.png";
 import styles from "./TV.module.scss";
 
@@ -13,6 +13,7 @@ interface TV {
 const TV: React.FC<TV> = ({ data }) => {
   const { id } = useRouter().query;
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const [url, setUrl] = useState<string>("");
 
   const vcrData: VCRData[] = useMemo(() => {
     return data.filter((vcrData: VCRData) => {
@@ -24,8 +25,10 @@ const TV: React.FC<TV> = ({ data }) => {
     if (audioRef.current) {
       audioRef.current.muted = false;
       audioRef.current.autoplay = true;
-      audioRef.current.controls = true;
       audioRef.current.play();
+      setTimeout(() => {
+        setUrl("?autoplay=1&mute=1");
+      }, 2000);
     }
   }, [audioRef]);
 
@@ -44,6 +47,12 @@ const TV: React.FC<TV> = ({ data }) => {
         src={vcrData[0]?.img || ""}
         width={1292}
         height={205}
+      />
+      <iframe
+        className={styles.video}
+        src={`${vcrData[0]?.link}${url}` || ""}
+        width="757"
+        height="500"
       />
       <audio src="/tape-sound.mp3" ref={audioRef} />
     </>
