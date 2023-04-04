@@ -1,6 +1,5 @@
 import YearSelection from "./YearSelection";
 import styles from "./Header.module.scss";
-import { VCRData } from "@/types/vcr";
 
 interface Header {
   setDecade: (input: string) => void;
