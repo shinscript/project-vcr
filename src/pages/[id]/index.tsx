@@ -54,6 +54,15 @@ const TV: React.FC<TV> = ({ data }) => {
         width="757"
         height="500"
       />
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/fgNmL82dfHM"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
       <audio src="/tape-sound.mp3" ref={audioRef} />
     </>
   );
